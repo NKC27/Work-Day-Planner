@@ -11,4 +11,4 @@ var displayDate = document.getElementById('currentDay');
 var nowDate = moment().fomat('LLLL');
 
 })
-
+console.log('Is this working??')
