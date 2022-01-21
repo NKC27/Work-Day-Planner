@@ -8,7 +8,8 @@
 $(document).ready(function () {
 
 var displayDate = document.getElementById('currentDay');
-var nowDate = moment().fomat('LLLL');
+var nowDate = moment().format('LLLL');
+displayDate.innerHTML = nowDate;
 
 })
 console.log('Is this working??')
