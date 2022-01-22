@@ -16,4 +16,4 @@ Link to live website here:
 
 # Screenshot-of-Work-Day-Planner
 
-![Work Day Planner](CaptureWorkDayScheduler.jpg)
+![Work Day Planner](./Assets/Images/CaptureWorkDayScheduler.jpg)
