@@ -48,6 +48,7 @@ $(".timeCompare").each(function () {
       $(this).addClass("past");
     }
   });
+  
 // 1.setItem(): Add key and value to localStorage
 // 2.getItem(): This is how you get items from localStorage
 // 3.removeItem(): Remove an item by key from localStorage
