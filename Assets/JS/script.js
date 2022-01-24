@@ -1,4 +1,4 @@
-// Moment.js needed to display curent date Under Title @top of the page! format for month/day/year 
+
 $(document).ready(function () {
 
 var displayDate = document.getElementById('currentDay'); // grabbing the id on html
@@ -60,7 +60,8 @@ $(".saveBtn").click(function (event) {
     var time = $(this).parent().attr("id").split("-")[1];
     localStorage.setItem(time, value);
   });
-
+  
+// Moment.js needed to display curent date Under Title @top of the page! format for month/day/year 
 // A $( document ).ready() block.
 // $( document ).ready(function() {
 //    console.log( "ready!" );
