@@ -1,8 +1,3 @@
-// A $( document ).ready() block.
-// $( document ).ready(function() {
-//    console.log( "ready!" );
-// });
-
 // Moment.js needed to display curent date Under Title @top of the page! format for month/day/year 
 $(document).ready(function () {
 
@@ -21,17 +16,9 @@ $('#clear').click(function (event) {
     localStorage.clear();
 });
 
-// $("#i_am_a_href").attr('id').split('_') // will return [ "i", "am", "a", "href" ]
-
-// $("#i_am_a_href").attr('id').split('_')[1] // will return 'am'
-
 // takes the time from each time-block and compares it to the actual time
 $(".timeCompare").each(function () {
 
-    // $("#i_am_a_href").attr('id').split('_') // will return [ "i", "am", "a", "href" ]
-
-    // $("#i_am_a_href").attr('id').split('_')[1] // will return 'am'
-    // var timeCompare = $(this).attr("id").split("-");
     var timeCompare = $(this).attr("id").split("-")[1]; // access the 2nd element index 
     
     if (currentHour == timeCompare) {
@@ -48,7 +35,7 @@ $(".timeCompare").each(function () {
       $(this).addClass("past");
     }
   });
-  
+
 // 1.setItem(): Add key and value to localStorage
 // 2.getItem(): This is how you get items from localStorage
 // 3.removeItem(): Remove an item by key from localStorage
@@ -65,13 +52,6 @@ $("#hour-15 .time-block").val(localStorage.getItem("15M"));
 $("#hour-16 .time-block").val(localStorage.getItem("16PM"));
 $("#hour-17 .time-block").val(localStorage.getItem("17PM"));
 
-// $( "li.third-item" ).siblings().css( "background-color", "red" );
-
-// const str = 'The quick brown fox jumps over the lazy dog.';
-// const words = str.split(' ');
-// console.log(words[3]);
-// expected output: "fox"
-
 //grabs values from time and value divs and saves them to local storage
 $(".saveBtn").click(function (event) {
     event.preventDefault();
@@ -80,3 +60,20 @@ $(".saveBtn").click(function (event) {
     var time = $(this).parent().attr("id").split("-")[1];
     localStorage.setItem(time, value);
   });
+
+// A $( document ).ready() block.
+// $( document ).ready(function() {
+//    console.log( "ready!" );
+// });
+// $( "li.third-item" ).siblings().css( "background-color", "red" );
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+// const words = str.split(' ');
+// console.log(words[3]);
+// expected output: "fox"
+// $("#i_am_a_href").attr('id').split('_') // will return [ "i", "am", "a", "href" ]
+// $("#i_am_a_href").attr('id').split('_') // will return [ "i", "am", "a", "href" ]
+
+    // $("#i_am_a_href").attr('id').split('_')[1] // will return 'am'
+    // var timeCompare = $(this).attr("id").split("-");
+// $("#i_am_a_href").attr('id').split('_')[1] // will return 'am'
